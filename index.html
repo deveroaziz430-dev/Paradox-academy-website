@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paradox Academy | Kamber</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f4f7fc;color:#17243b;line-height:1.6}
+header{background:#102b50;color:white;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.logo{font-size:23px;font-weight:bold}
+.logo span{color:#42c5e8}
+nav a{color:white;text-decoration:none;margin:7px;font-size:14px}
+.hero{background:linear-gradient(120deg,#102b50,#17618b);color:white;text-align:center;padding:75px 18px}
+.hero h1{font-size:38px;margin-bottom:15px}
+.hero p{max-width:650px;margin:auto;color:#e2edf7}
+.btn{display:inline-block;background:#19a9d0;color:white;padding:12px 24px;border-radius:7px;text-decoration:none;margin-top:22px;font-weight:bold}
+section{padding:55px 7%}
+.heading{text-align:center;font-size:29px;color:#12345a;margin-bottom:25px}
+.about{max-width:850px;margin:auto;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:white;padding:24px;border-radius:12px;box-shadow:0 4px 15px #102b5010;border:1px solid #e5edf5}
+.card h3{color:#12618b;margin-bottom:9px}
+.card p{font-size:14px;color:#58677b}
+.highlight{background:#e8f4fa}
+.teacher{text-align:center;background:#102b50;color:white;border-radius:14px;padding:35px}
+.teacher h2{color:#42c5e8}
+form{max-width:600px;margin:auto;background:white;padding:25px;border-radius:12px;box-shadow:0 4px 15px #102b5010}
+input,select,textarea{width:100%;padding:13px;margin:9px 0;border:1px solid #ccd7e4;border-radius:6px;font-size:15px}
+button{background:#12618b;color:white;border:0;padding:13px 22px;border-radius:6px;font-size:16px;width:100%;cursor:pointer}
+footer{background:#102b50;color:white;text-align:center;padding:28px 15px}
+footer p{font-size:14px;color:#d4e2ef}
+@media(max-width:600px){
+ header{justify-content:center;text-align:center}
+ nav{margin-top:12px}
+ nav a{display:inline-block}
+ .hero h1{font-size:30px}
+ section{padding:42px 5%}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="logo">PARADOX <span>ACADEMY</span></div>
+ <nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#courses">Courses</a>
+  <a href="#admission">Admission</a>
+  <a href="#contact">Contact</a>
+ </nav>
+</header>
+
+<div class="hero" id="home">
+ <h1>Welcome to Paradox Academy</h1>
+ <p>Learn Computer Skills, Build Your Future.
+  Start your journey towards a successful digital career with practical computer education.</p>
+ <a class="btn" href="#admission">Apply for Admission</a>
+</div>
+
+<section id="about">
+ <h2 class="heading">About Our Academy</h2>
+ <div class="about">
+  <p>Paradox Academy is a learning platform focused on computer education and practical digital skills. Our goal is to help students learn technology, improve their knowledge and prepare for future opportunities.</p>
+  <br>
+  <p><b>Location:</b> Shaikh Muhallah, Kamber, Sindh, Pakistan</p>
+ </div>
+</section>
+
+<section class="highlight" id="courses">
+ <h2 class="heading">Our Computer Courses</h2>
+ <div class="cards">
+  <div class="card"><h3>CIT</h3><p>Certificate in Information Technology. Learn essential computer skills and office applications.</p></div>
+  <div class="card"><h3>DIT</h3><p>Diploma in Information Technology. Develop broader computer and IT knowledge.</p></div>
+  <div class="card"><h3>Basic Computer</h3><p>Computer introduction, Windows, files, folders, typing and basic operations.</p></div>
+  <div class="card"><h3>MS Office</h3><p>Learn MS Word, Excel and PowerPoint with practical exercises.</p></div>
+  <div class="card"><h3>Graphic Designing</h3><p>Explore design basics, layouts, colours and creative digital content.</p></div>
+  <div class="card"><h3>Web Development</h3><p>Learn HTML, CSS and JavaScript to create websites.</p></div>
+  <div class="card"><h3>Internet & Email</h3><p>Learn browsing, email, online research and safe internet use.</p></div>
+  <div class="card"><h3>Hardware & Networking</h3><p>Understand computer components, troubleshooting and networking basics.</p></div>
+  <div class="card"><h3>Typing & Data Entry</h3><p>Improve typing speed, accuracy and professional data entry skills.</p></div>
+ </div>
+</section>
+
+<section>
+ <div class="teacher">
+  <h2>Learning With Guidance</h2>
+  <h3>Sir Murtaza Chandio</h3>
+  <p>Computer education and student learning guidance</p>
+  <p>Paradox Academy — Kamber</p>
+ </div>
+</section>
+
+<section id="admission">
+ <h2 class="heading">Admission Inquiry</h2>
+ <form onsubmit="event.preventDefault();alert('Thank you! Your demo form is working. Please contact the academy to complete your admission.');">
+  <input type="text" placeholder="Student Full Name" required>
+  <input type="text" placeholder="Father Name" required>
+  <input type="tel" placeholder="Mobile Number" required>
+  <input type="email" placeholder="Email Address">
+  <select required>
+   <option value="">Select Your Course</option>
+   <option>CIT</option>
+   <option>DIT</option>
+   <option>Basic Computer</option>
+   <option>MS Office</option>
+   <option>Graphic Designing</option>
+   <option>Web Development</option>
+   <option>Hardware & Networking</option>
+   <option>Typing & Data Entry</option>
+  </select>
+  <textarea placeholder="Your Message" rows="4"></textarea>
+  <button type="submit">Submit Inquiry</button>
+ </form>
+ <p style="text-align:center;margin-top:15px;font-size:13px">Demo form only — online submission and data storage will be configured in a later step.</p>
+</section>
+
+<section class="highlight" id="contact">
+ <h2 class="heading">Contact & Location</h2>
+ <div class="about">
+  <h3>Paradox Academy</h3>
+  <p>Shaikh Muhallah, Kamber, Sindh, Pakistan</p>
+  <p>Visit the academy for course and admission information.</p>
+ </div>
+</section>
+
+<footer>
+ <h3>PARADOX ACADEMY</h3>
+ <p>Learn Today. Lead Tomorrow.</p>
+ <p>Shaikh Muhallah, Kamber, Sindh, Pakistan</p>
+ <p>© 2026 Paradox Academy. Website project.</p>
+</footer>
+
+</body>
+</html>
