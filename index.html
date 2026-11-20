@@ -1,144 +1,378 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paradox Academy | Kamber</title>
+<title>Paradox Academy | Computer Education</title>
+<meta name="description" content="Paradox Academy - Professional Computer Education in Kamber, Sindh, Pakistan.">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#f4f7fc;color:#17243b;line-height:1.6}
-header{background:#102b50;color:white;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.logo{font-size:23px;font-weight:bold}
-.logo span{color:#42c5e8}
-nav a{color:white;text-decoration:none;margin:7px;font-size:14px}
-.hero{background:linear-gradient(120deg,#102b50,#17618b);color:white;text-align:center;padding:75px 18px}
-.hero h1{font-size:38px;margin-bottom:15px}
-.hero p{max-width:650px;margin:auto;color:#e2edf7}
-.btn{display:inline-block;background:#19a9d0;color:white;padding:12px 24px;border-radius:7px;text-decoration:none;margin-top:22px;font-weight:bold}
-section{padding:55px 7%}
-.heading{text-align:center;font-size:29px;color:#12345a;margin-bottom:25px}
-.about{max-width:850px;margin:auto;text-align:center}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{background:white;padding:24px;border-radius:12px;box-shadow:0 4px 15px #102b5010;border:1px solid #e5edf5}
-.card h3{color:#12618b;margin-bottom:9px}
-.card p{font-size:14px;color:#58677b}
-.highlight{background:#e8f4fa}
-.teacher{text-align:center;background:#102b50;color:white;border-radius:14px;padding:35px}
-.teacher h2{color:#42c5e8}
-form{max-width:600px;margin:auto;background:white;padding:25px;border-radius:12px;box-shadow:0 4px 15px #102b5010}
-input,select,textarea{width:100%;padding:13px;margin:9px 0;border:1px solid #ccd7e4;border-radius:6px;font-size:15px}
-button{background:#12618b;color:white;border:0;padding:13px 22px;border-radius:6px;font-size:16px;width:100%;cursor:pointer}
-footer{background:#102b50;color:white;text-align:center;padding:28px 15px}
-footer p{font-size:14px;color:#d4e2ef}
-@media(max-width:600px){
- header{justify-content:center;text-align:center}
- nav{margin-top:12px}
- nav a{display:inline-block}
- .hero h1{font-size:30px}
- section{padding:42px 5%}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #18263a;
+    line-height: 1.6;
+}
+
+header {
+    background: #092747;
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #43c6e8;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #43c6e8;
+}
+
+.hero {
+    background: linear-gradient(135deg, #092747, #14558a);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #43c6e8;
+}
+
+.hero p {
+    font-size: 17px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    background: #43c6e8;
+    color: #092747;
+    padding: 13px 25px;
+    margin-top: 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 65px 7%;
+}
+
+.section-title {
+    text-align: center;
+    color: #092747;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 35px;
+    color: #536174;
+}
+
+.about-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.courses {
+    background: #eaf1f8;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.course-card {
+    background: white;
+    padding: 25px 18px;
+    border-radius: 10px;
+    text-align: center;
+    border-bottom: 4px solid #43c6e8;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.course-card h3 {
+    color: #092747;
+    margin-bottom: 8px;
+}
+
+.course-card p {
+    color: #637084;
+    font-size: 14px;
+}
+
+.admission {
+    background: white;
+}
+
+.form-container {
+    max-width: 850px;
+    margin: auto;
+    background: #f5f8fc;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #dce5ef;
+}
+
+.form-container iframe {
+    display: block;
+    width: 100%;
+    min-height: 2700px;
+    border: none;
+    background: white;
+    border-radius: 8px;
+}
+
+.contact-box {
+    max-width: 800px;
+    margin: auto;
+    background: #092747;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 12px;
+}
+
+.contact-box h3 {
+    color: #43c6e8;
+    margin-bottom: 12px;
+}
+
+footer {
+    background: #061b31;
+    color: white;
+    text-align: center;
+    padding: 22px 12px;
+    font-size: 14px;
+}
+
+@media(max-width:600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 65px 18px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 48px 5%;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .form-container {
+        padding: 7px;
+    }
 }
 </style>
 </head>
+
 <body>
 
 <header>
- <div class="logo">PARADOX <span>ACADEMY</span></div>
- <nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#courses">Courses</a>
-  <a href="#admission">Admission</a>
-  <a href="#contact">Contact</a>
- </nav>
+    <div class="logo">PARADOX <span>ACADEMY</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<div class="hero" id="home">
- <h1>Welcome to Paradox Academy</h1>
- <p>Learn Computer Skills, Build Your Future.
-  Start your journey towards a successful digital career with practical computer education.</p>
- <a class="btn" href="#admission">Apply for Admission</a>
-</div>
+<section class="hero" id="home">
+    <h1>Welcome to <span>Paradox Academy</span></h1>
+    <p>
+        Learn Today, Lead Tomorrow.
+        Build your computer skills and prepare yourself
+        for a successful digital future.
+    </p>
+    <a href="#admission" class="btn">Apply for Admission</a>
+</section>
 
 <section id="about">
- <h2 class="heading">About Our Academy</h2>
- <div class="about">
-  <p>Paradox Academy is a learning platform focused on computer education and practical digital skills. Our goal is to help students learn technology, improve their knowledge and prepare for future opportunities.</p>
-  <br>
-  <p><b>Location:</b> Shaikh Muhallah, Kamber, Sindh, Pakistan</p>
- </div>
+    <h2 class="section-title">About Our Academy</h2>
+    <p class="section-intro">
+        Quality Computer Education and Practical Learning.
+    </p>
+
+    <div class="about-box">
+        <h3>Welcome to Paradox Academy</h3>
+        <p>
+            Paradox Academy is dedicated to providing
+            computer education, practical skills and
+            professional learning opportunities to students.
+        </p>
+        <p style="margin-top:15px;">
+            Under the guidance of <strong>Sir Murtaza Chandio</strong>,
+            students can develop their knowledge and confidence
+            in modern computer technology.
+        </p>
+        <p style="margin-top:15px;">
+            <strong>Location:</strong>
+            Shaikh Muhallah, Kamber, Sindh, Pakistan
+        </p>
+    </div>
 </section>
 
-<section class="highlight" id="courses">
- <h2 class="heading">Our Computer Courses</h2>
- <div class="cards">
-  <div class="card"><h3>CIT</h3><p>Certificate in Information Technology. Learn essential computer skills and office applications.</p></div>
-  <div class="card"><h3>DIT</h3><p>Diploma in Information Technology. Develop broader computer and IT knowledge.</p></div>
-  <div class="card"><h3>Basic Computer</h3><p>Computer introduction, Windows, files, folders, typing and basic operations.</p></div>
-  <div class="card"><h3>MS Office</h3><p>Learn MS Word, Excel and PowerPoint with practical exercises.</p></div>
-  <div class="card"><h3>Graphic Designing</h3><p>Explore design basics, layouts, colours and creative digital content.</p></div>
-  <div class="card"><h3>Web Development</h3><p>Learn HTML, CSS and JavaScript to create websites.</p></div>
-  <div class="card"><h3>Internet & Email</h3><p>Learn browsing, email, online research and safe internet use.</p></div>
-  <div class="card"><h3>Hardware & Networking</h3><p>Understand computer components, troubleshooting and networking basics.</p></div>
-  <div class="card"><h3>Typing & Data Entry</h3><p>Improve typing speed, accuracy and professional data entry skills.</p></div>
- </div>
+<section class="courses" id="courses">
+    <h2 class="section-title">Our Courses</h2>
+    <p class="section-intro">
+        Choose a course and start building your future.
+    </p>
+
+    <div class="course-grid">
+
+        <div class="course-card">
+            <h3>CIT</h3>
+            <p>Certificate in Information Technology</p>
+        </div>
+
+        <div class="course-card">
+            <h3>DIT</h3>
+            <p>Diploma in Information Technology</p>
+        </div>
+
+        <div class="course-card">
+            <h3>Basic Computer</h3>
+            <p>Learn essential computer fundamentals.</p>
+        </div>
+
+        <div class="course-card">
+            <h3>MS Office</h3>
+            <p>Learn Word, Excel and PowerPoint.</p>
+        </div>
+
+        <div class="course-card">
+            <h3>Graphic Designing</h3>
+            <p>Develop creative design skills.</p>
+        </div>
+
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS and website creation.</p>
+        </div>
+
+        <div class="course-card">
+            <h3>Internet & Email</h3>
+            <p>Learn internet browsing and email skills.</p>
+        </div>
+
+        <div class="course-card">
+            <h3>Hardware & Networking</h3>
+            <p>Understand computer hardware and networks.</p>
+        </div>
+
+        <div class="course-card">
+            <h3>Typing & Data Entry</h3>
+            <p>Improve typing speed and data entry skills.</p>
+        </div>
+
+    </div>
 </section>
 
-<section>
- <div class="teacher">
-  <h2>Learning With Guidance</h2>
-  <h3>Sir Murtaza Chandio</h3>
-  <p>Computer education and student learning guidance</p>
-  <p>Paradox Academy — Kamber</p>
- </div>
+<section class="admission" id="admission">
+    <h2 class="section-title">Online Admission Form</h2>
+    <p class="section-intro">
+        Fill out the form below to apply for admission
+        at Paradox Academy.
+    </p>
+
+    <div class="form-container">
+
+        <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeRgySWrWuzhXqrZl_fAZP95lYZgu-USNwu5qBbjfyionvbRA/viewform?embedded=true"
+        width="100%"
+        height="2700"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Loading…
+        </iframe>
+
+    </div>
 </section>
 
-<section id="admission">
- <h2 class="heading">Admission 
-<iframe
-  src="https://docs.google.com/forms/d/e/1FAIpQLSeRgySWrWuzhXqrZl_fAZP95lYZgu-USNwu5qBbjfyionvbRA/viewform?embedded=true"
-  width="100%"
-  height="2700"
-  frameborder="0"
-  marginheight="0"
-  marginwidth="0">
-  Loading…
-</iframe>
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
 
-
-  <input type="text" placeholder="Student Full Name" required>
-  <input type="text" placeholder="Father Name" required>
-  <input type="tel" placeholder="Mobile Number" required>
-  <input type="email" placeholder="Email Address">
-  <select required>
-   <option value="">Select Your Course</option>
-   <option>CIT</option>
-   <option>DIT</option>
-   <option>Basic Computer</option>
-   <option>MS Office</option>
-   <option>Graphic Designing</option>
-   <option>Web Development</option>
-   <option>Hardware & Networking</option>
-   <option>Typing & Data Entry</option>
-  </select>
-  <textarea placeholder="Your Message" rows="4"></textarea>
-  <button type="submit">Submit Inquiry</button>
- </form
-</section>
-
-<section class="highlight" id="contact">
- <h2 class="heading">Contact & Location</h2>
- <div class="about">
-  <h3>Paradox Academy</h3>
-  <p>Shaikh Muhallah, Kamber, Sindh, Pakistan</p>
-  <p>Visit the academy for course and admission information.</p>
- </div>
+    <div class="contact-box">
+        <h3>Paradox Academy</h3>
+        <p>Shaikh Muhallah, Kamber, Sindh, Pakistan</p>
+        <p>Computer Education | Practical Learning | Digital Skills</p>
+        <p style="margin-top:12px;">
+            Guidance: Sir Murtaza Chandio
+        </p>
+    </div>
 </section>
 
 <footer>
- <h3>PARADOX ACADEMY</h3>
- <p>Learn Today. Lead Tomorrow.</p>
- <p>Shaikh Muhallah, Kamber, Sindh, Pakistan</p>
- <p>© 2026 Paradox Academy. Website project.</p>
+    <p>© 2026 Paradox Academy. All Rights Reserved.</p>
+    <p>Learn Today, Lead Tomorrow.</p>
 </footer>
 
 </body>
